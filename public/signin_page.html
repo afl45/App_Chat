@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../src/vert.jpg" type="image/jpg">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/61e6fb50b8.css" crossorigin="anonymous">
+    <title>Chat with socket.io</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+        body {
+            margin: 0;
+            background-color: #41BF2D;
+            padding: 0;
+        }
+        #connect_form {
+            background-color: #36B023;
+            height: 600px;
+            width: 1000px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .btn {
+            width: 250px;
+            height: 30px;
+            font-family: 'Kavoon', cursive;
+            border: 2px solid black;
+            background-color: white;
+            border-radius: 7px;
+        }
+        label {
+            font-family: 'Kavoon', cursive;
+            font-size: 30px;
+        }
+        h1 {
+            font-family: 'Kavoon', cursive;
+        }
+    </style>
+</head>
+<body>
+    <div id="connect_form">
+        <br><br><br><br>
+        <h1>Connecte toi ICI</h1>
+        <br><br><br>
+        <form method="POST" action="/signin">
+        <label for="email">Email</label><br>
+        <input name="email" class="btn" type="email" id="email"><br><br>
+        <label for="password">Password</label><br>
+        <input name="password" class="btn" type="password" id="password"><br><br><br><br>
+        <input class="btn" type="submit" value="Signin">
+        </form>
+    </div>
+</body>
+</html>
